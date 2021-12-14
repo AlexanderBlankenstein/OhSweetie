@@ -1,4 +1,4 @@
 # OhSweetie
 
-web design for OhSweetie
+web design for OhSweetie by Alexander
 
