@@ -6,7 +6,7 @@ body {
 }
   
 nav {
-    background-color: rgb(0, 61, 92);
+    background-color: rgb(155, 122, 81);
     color: white;
     animation: nav-load var(--nav-load-time) ease-in;
 }
@@ -28,12 +28,27 @@ nav li {
     animation-fill-mode: forwards;
     transform: scale(0);
 }
+
+nav img {
+    width: 100px;
+    height: auto;
+}
   
 nav li:first-child {
     animation-name: nav-first-link-load;
     transform: translateX(-1000%);
 }
+
+nav li:nth-child(2) {
+    animation-name: nav-first-link-load;
+    transform: translateX(-1000%);
+}
   
+nav li:nth-child(4) {
+    animation-name: nav-last-link-load;
+    transform: translateX(1000%);
+}
+
 nav li:last-child {
     animation-name: nav-last-link-load;
     transform: translateX(1000%);
@@ -53,14 +68,14 @@ main {
 }
   
 h1 {
-    animation: article-load 300ms ease-in var(--article-load-delay);
+    animation: article-load 500ms ease-in var(--article-load-delay);
     animation-fill-mode: forwards;
     transform: translateY(-20px);
     opacity: 0;
 }
   
 p {
-    animation: article-load 300ms ease-in calc(var(--article-load-delay) + 200ms);
+    animation: article-load 500ms ease-in calc(var(--article-load-delay) + 200ms);
     animation-fill-mode: forwards;
     transform: translateY(-20px);
     opacity: 0;
