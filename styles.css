@@ -18,17 +18,67 @@ body {
     background-color: rgb(155, 122, 81);
 }
 
+.footer {
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: rgb(155, 122, 81);
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    min-height: 2rem;
+    color: white;
+    text-align: center;
+}
+
+.footer1 {
+    position: fixed;
+    left: 3%;
+}
+
+.footer2 {
+    position: relative;
+}
+
+.footer3 {
+    position: fixed;
+    right: 3%;
+}
+
+.fa {
+    padding: 1rem;
+    text-align: center;
+    background-color: rgb(170, 170, 170);
+    margin: 0 10px;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
 .logo {
     position: relative;
     width: 40%;
-    min-width: 4em;
+    min-width: 4rem;
     height: auto;
 }
 
-@media (max-width: 600px){
+.flower-logo {
+    position: relative;
+    width: 30%;
+    min-width: 4rem;
+    height: auto;
+}
+
+@media (max-width: 650px){
+    .footer2 {
+        display: none!important;
+    }
+    /*
     nav {
         display: none!important;
     }
+    */
 }
 
 nav {
