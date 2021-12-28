@@ -16,6 +16,12 @@ body {
     align-items: center;
     padding: 1rem;
     background-color: rgb(155, 122, 81);
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    min-height: 2rem;
+    color: white;
+    text-align: center;
 }
 
 .footer {
@@ -73,6 +79,9 @@ body {
 @media (max-width: 650px){
     .footer2 {
         display: none!important;
+    }
+    .fa {
+        margin: 0 0px;
     }
     /*
     nav {
@@ -139,7 +148,7 @@ nav a {
     text-decoration: none;
     height: fit-content;
     vertical-align: bottom;
-    font-size: 1.5em;
+    font-size: 1.5rem;
 }
   
 main {
