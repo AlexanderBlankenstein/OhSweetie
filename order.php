@@ -26,7 +26,7 @@
         <div class="content">
             <h2>Contact</h2>
             <div class="contact_grid">
-                <form class="contact_form" method="post" action="./php/contact.php">
+                <form class="contact_form" onsubmit="sendContact(); return false;">
                     <fieldset class="contact_fieldset">
                         <div class="contact_item">
                             <input id="contact-name" type="text" class="contact_input" placeholder=" " required>
