@@ -129,6 +129,10 @@ fieldset {
     border-image: initial;
 }
 
+.hidden {
+    display: none;
+}
+
 .footer {
     display: flex;
     position: fixed;

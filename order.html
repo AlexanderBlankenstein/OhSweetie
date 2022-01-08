@@ -26,28 +26,29 @@
         <div class="content">
             <h2>Contact</h2>
             <div class="contact_grid">
-                <form class="contact_form" name="contact" method="POST" data-netlify="true">
-                    <fieldset class="contact_fieldset">
+                <form class="contact_form" method="post" name="Contact Form" action="/index.html" netlify-honeypot="hpinput" data-netlify="true">
+                    <div class="contact_fieldset">
+                        <input class="hidden" name="hpinput">
                         <div class="contact_item">
-                            <input id="contact-name" type="text" class="contact_input" placeholder=" " required>
+                            <input id="contact-name" name="name" type="text" class="contact_input" placeholder=" " required>
                             <label for="contact-name" class="contact_label">
                                 "Name "
                                 <span>*</span>
                             </label>
                         </div>
                         <div class="contact_item">
-                            <input id="contact-email" type="email" class="contact_input" placeholder=" " required>
+                            <input id="contact-email" name="email" type="email" class="contact_input" placeholder=" " required>
                             <label for="contact-email" class="contact_label">
                                 "Email "
                                 <span>*</span>
                             </label>
                         </div>
                         <div class="contact_item">
-                            <input id="contact-phone" type="tel" class="contact_input" placeholder=" ">
+                            <input id="contact-phone" name="phone" type="tel" class="contact_input" placeholder=" ">
                             <label for="contact-phone" class="contact_label">Phone</label>
                         </div>
                         <div class="contact_item">
-                            <textarea id="contact-msg" class="contact_input" placeholder=" "></textarea>
+                            <textarea id="contact-msg" name="messsage" class="contact_input" placeholder=" "></textarea>
                             <label for="contact-msg" class="contact_label">Message</label>
                         </div>
                         <div class="contact_msg"></div>
@@ -55,7 +56,7 @@
                             <button type="button" onclick="clearContact();">Clear</button>
                             <button type="submit">Submit</button>
                         </div>
-                    </fieldset>
+                    </div>
                 </form>
             </div>
         </div>

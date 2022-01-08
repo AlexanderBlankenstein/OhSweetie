@@ -1,4 +1,5 @@
 <?php
+/*
 
 $errors = [];
 $errorMessage = '';
@@ -34,4 +35,5 @@ if (!empty($_POST)) {
         http_response_code(400);
     }
 }
+*/
 ?>

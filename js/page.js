@@ -58,6 +58,7 @@ function scrollToSection(anchorName) {
 
 */
 
+/*
 // Contact
 
 function sendContact() {
@@ -112,6 +113,7 @@ function sendContact() {
     ajax.send(formdata);	
     return false;
 }
+/**/
 
 function clearContact() {
     const msg = document.querySelector('.contact_msg');
