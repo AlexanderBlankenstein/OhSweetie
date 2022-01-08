@@ -50,6 +50,13 @@ form {
     padding: 4em 1em 6em;
 }
 
+@media (min-width: 721px) {
+    .contact_grid {
+        display: grid;
+        grid-template-columns: auto max-content;
+    }
+}
+
 .contact fieldset {
     all: unset;
     position: relative;
@@ -77,6 +84,27 @@ form {
     outline-offset: 2px;
 }
 
+.contact_input:focus {
+    outline: 1px solid #eee;
+}
+
+.contact_input:not(:placeholder-shown), .contact_input:focus {
+    margin-top: 1em;
+}
+  
+.contact_input:not(:placeholder-shown) ~ label, .contact_input:focus ~ label {
+    font-size: 0.8em;
+    top: -0.2em;
+    left: 0;
+    color: #69c;
+}
+
+.contact textarea {
+    height: 7em;
+    resize: vertical;
+    min-height: 3em;
+}
+
 .contact_label {
     position: absolute;
     font-size: 0.9em;
@@ -86,6 +114,10 @@ form {
     line-height: 1;
     pointer-events: none;
     transition: all 0.3s;
+}
+
+.contact_label > span {
+    color: #c69;
 }
 
 .contact_buttons {
@@ -106,12 +138,53 @@ form {
     outline-offset: 2px;
     transition: all 0.25s;
 }
+
 button, select {
     font-size: inherit;
     font-family: inherit;
     background: none;
     border: none;
     color: inherit;
+}
+
+.contact_msg {
+    text-align: center;
+    color: #111;
+}
+
+.contact_msg.ok {
+    padding: 0.5em;
+    margin: 0.5em 0;
+    background-color: #6c9;
+}
+  
+.contact_msg.error {
+    padding: 0.5em;
+    margin: 0.5em 0;
+    background-color: #c69;
+}
+  
+.contact_social {
+    display: flex;
+    justify-content: center;
+}
+  
+@media (min-width: 721px) {
+    .contact_social {
+        flex-direction: column;
+        border-left: 1px solid #69c;
+        padding-left: 2em;
+        margin: 1em 0 0 2em;
+    }
+}
+
+@media (max-width: 720px) {
+    .contact_social {
+        flex-direction: row;
+        border-top: 1px solid #69c;
+        padding-top: 2em;
+        margin-top: 2em;
+    }
 }
 
 fieldset {
