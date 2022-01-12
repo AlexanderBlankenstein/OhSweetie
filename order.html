@@ -17,17 +17,22 @@
     -->
 </head>
 <body>
-    <header class="header">
+    <section class="header" style="min-height: calc(869px - 2.7em);">
         <img class="logo" src="images/Oh+Sweetie+Logo+Name+Only.png" alt="Logo">
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="flavours.html">Flavours</a></li>
-                <li><a href="pricing.html">Pricing</a></li>
-                <li><a href="order.html">Order Now</a></li>
-            </ul>
-        </nav>
-    </header>
+    </section>
+    <nav>
+        <div class="navButtons">
+            <button onclick="scrollToSection('flavours')" data-anchor="anchor_flavours" class="on">
+                Flavours
+            </button>
+            <button onclick="scrollToSection('pricing')" data-anchor="anchor_pricing" class="on">
+                Pricing
+            </button>
+            <button onclick="scrollToSection('contact')" data-anchor="anchor_contact" class="on">
+                Contact Me
+            </button>
+        </div>
+    </nav>
     <section class="flavours">
         <div class="anchor anchor_flavours"></div>
         <div class="content">

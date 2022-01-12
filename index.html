@@ -13,27 +13,77 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
 </head>
 <body>
-    <header class="header">
+    <section class="header" style="min-height: calc(869px - 2.7em);">
         <img class="logo" src="images/Oh+Sweetie+Logo+Name+Only.png" alt="Logo">
-        <nav>
-            <ul>
-                <li><a href="mailto:oh.sweetie.creations@gmail.com?subject = Order" alt="Email Us Button">Email Us</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <article>
-                <h1>Under Construction</h1>
-                <p>We are baking up something new here.</p>
-                <p>To place an Order or ask a question click the "Email Us" button above.</p>
-            </article>
-        </section>
-    </main>
+    </section>
+    <nav>
+        <div class="navButtons">
+            <button onclick="scrollToSection('contact')" data-anchor="anchor_contact" class="on">
+                Contact Me
+            </button>
+        </div>
+    </nav>
+    <section class="underConstruction">
+        <div class="content">
+            <h2>Under Construction</h2>
+            <p>We are baking up something new here.</p>
+            <p>To place an Order or ask a question, please fill out the form below.</p>
+        </div>
+    </section>
+    <section class="contact">
+        <div class="anchor anchor_contact"></div>
+        <div class="content">
+            <h2>Contact</h2>
+            <div class="contact_grid">
+                <form class="contact_form" method="post" name="Contact Form" action="/index.html" netlify-honeypot="hpinput" data-netlify="true">
+                    <div class="contact_fieldset">
+                        <input class="hidden" name="hpinput">
+                        <div class="contact_item">
+                            <input id="contact-name" name="name" type="text" class="contact_input" placeholder=" " required>
+                            <label for="contact-name" class="contact_label">
+                                Name 
+                                <span>*</span>
+                            </label>
+                        </div>
+                        <div class="contact_item">
+                            <input id="contact-email" name="email" type="email" class="contact_input" placeholder=" " required>
+                            <label for="contact-email" class="contact_label">
+                                Email 
+                                <span>*</span>
+                            </label>
+                        </div>
+                        <div class="contact_item">
+                            <input id="contact-phone" name="phone" type="tel" class="contact_input" placeholder=" ">
+                            <label for="contact-phone" class="contact_label">Phone</label>
+                        </div>
+                        <div class="contact_item">
+                            <textarea id="contact-msg" name="messsage" class="contact_input" placeholder=" "></textarea>
+                            <label for="contact-msg" class="contact_label">Message</label>
+                        </div>
+                        <div class="contact_msg"></div>
+                        <div class="contact_buttons">
+                            <button type="button" onclick="clearContact();">Clear</button>
+                            <button type="submit">Submit</button>
+                        </div>
+                    </div>
+                </form>
+                <div class="contact_social">
+                    <a class="contact_socialIcon" target="_blank" rel="noreferrer" href="https://www.instagram.com/oh.sweetie.creations/">
+                        <img src="./images/instagram.png" alt="Instagram">
+                    </a>
+                    <a class="contact_socialIcon" target="_blank" rel="noreferrer" href="mailto:oh.sweetie.creations@gmail.com?subject = Order">
+                        <img src="./images/email.png" alt="Email">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
     <footer class="footer">
-        <div class="footer_social">
-            <a href="https://www.instagram.com/oh.sweetie.creations/" class="fa fa-instagram"></a>
-            <a href="mailto:oh.sweetie.creations@gmail.com?subject = Order" class="fa fa-google"></a>
+        <div class="footer_CR">
+            <svg viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <path d="M11.88 9.14c1.28.06 1.61 1.15 1.63 1.66h1.79c-.08-1.98-1.49-3.19-3.45-3.19C9.64 7.61 8 9 8 12.14c0 1.94.93 4.24 3.84 4.24 2.22 0 3.41-1.65 3.44-2.95h-1.79c-.03.59-.45 1.38-1.63 1.44-1.31-.04-1.86-1.06-1.86-2.73 0-2.89 1.28-2.98 1.88-3zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"></path>
+            </svg>
+             OhSweetie / 2022 
         </div>
         <div class="footer_logo"><img class="flower-logo" src="images/Oh+Sweetie+Flower.png" alt="Small Flower Logo"></div>
         <div class="footer_email">oh.sweetie.creations@gmail.com</div>

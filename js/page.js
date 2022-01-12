@@ -1,6 +1,5 @@
 const script_page = true;
 
-/*
 function initPage() {
 
     const top = document.querySelector('.top');
@@ -45,6 +44,7 @@ function initPage() {
             }
         });
     }
+}
 
 function scrollToSection(anchorName) {
 
@@ -55,65 +55,6 @@ function scrollToSection(anchorName) {
         anchor.scrollIntoView({behavior: "smooth", block: "start"});
     }
 }
-
-*/
-
-/*
-// Contact
-
-function sendContact() {
-
-    const msg = document.querySelector('.contact_msg');
-    msg.innerHTML = '';
-    msg.classList = 'contact_msg';
-
-    const fieldset = document.querySelector('.contact_fieldset');
-    fieldset.disabled = true;
-
-    var formdata = new FormData();
-	
-    formdata.append('Name', document.querySelector('#contact-name').value);
-    formdata.append('Email', document.querySelector('#contact-email').value);
-    formdata.append('Phone', document.querySelector('#contact-phone').value);
-    formdata.append('Message', document.querySelector('#contact-msg').value);
-
-    var ajax = new XMLHttpRequest();
-    ajax.open("POST", './php/contact.php', true);
-    //ajax.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-    ajax.onreadystatechange = () =>{
-
-        if(ajax.readyState === 4) {
-        
-            if (ajax.status === 200) {
-            
-                const res = ajax.responseText;
-
-                if (res == 'OK') {
-
-                    document.querySelector('.contact_form').reset();
-                    msg.innerHTML = 'Message sent successfully';
-                    msg.classList.add('ok');
-
-                } else {
-
-                    // error
-                    msg.innerHTML = res;
-                    msg.classList.add('error');
-                }
-
-            } else {
-
-                // Communication error
-                msg.innerHTML = 'Communication error';
-                msg.classList.add('error');
-            }
-            fieldset.disabled = false;
-        } 
-    }	        
-    ajax.send(formdata);	
-    return false;
-}
-/**/
 
 function clearContact() {
     const msg = document.querySelector('.contact_msg');
