@@ -7,6 +7,14 @@
     <title>Order Now</title>
     <script src="./js/page.js" type="text/javascript"></script>
     <link rel="stylesheet" href="styles.css">
+    <!--note to self. use this colour palet. 
+    #ff8daa	(255,141,170)
+    #fdaeae	(253,174,174)
+    #f6e2b3	(246,226,179)
+    #b49982	(180,153,130)
+    #7e6651	(126,102,81)
+    from https://www.color-hex.com/color-palette/42570
+    -->
 </head>
 <body>
     <header class="header">
@@ -78,20 +86,37 @@
         <div class="content">
             <h2>Pricing</h2>
             <div class="pricing_grid">
-                <article>
-                    <h1>Cupcake Prices:</h1>
-                    <p>Mini Cupcakes: $12 per dozen
-                        Regular Cupcakes: $20 per dozen</p>
-                </article>
-                <article>
-                    <h1>Cake Prices:</h1>
-                    <p>6” three layers: $30
-                        8” two layers: $40
-                        8” three layers: $45
-                        10” one layer: $50
-                        10” two layers: $60
-                        Sheet cake two layers: $60</p>
-                </article>
+                <div class="price-control">
+                    <div>
+                        <h3>Dessert Type</h3>
+                        <div>
+                            <input type="radio" name="priceStyle" id="priceStyle-Cakes" onchange="setNewPrice()" value="Cakes" checked>
+                            <label for="priceStyle-Cakes">Cakes</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="priceStyle" id="priceStyle-CupCakes" onchange="setNewPrice()" value="CupCakes" checked>
+                            <label for="priceStyle-CupCakes">CupCakes</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-main">
+                    <div class="price-textOuter">
+                        <div class="price-text">
+                            <pre>
+                                Mini Cupcakes: $12 per dozen 
+                                Regular Cupcakes: $20 per dozen
+                            </pre>
+                            <pre>
+                                6” three layers: $30
+                                8” two layers: $40
+                                8” three layers: $45
+                                10” one layer: $50
+                                10” two layers: $60
+                                Sheet cake two layers: $60
+                            </pre>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -132,8 +157,26 @@
                         </div>
                     </div>
                 </form>
+                <div class="contact_social">
+                    <a class="contact_socialIcon" target="_blank" rel="noreferrer" href="https://www.instagram.com/oh.sweetie.creations/">
+                        <img src="./images/instagram.png" alt="Instagram">
+                    </a>
+                    <a class="contact_socialIcon" target="_blank" rel="noreferrer" href="mailto:oh.sweetie.creations@gmail.com?subject = Order">
+                        <img src="./images/email.png" alt="Email">
+                    </a>
+                </div>
             </div>
         </div>
     </section>
+    <footer class="footer">
+        <div class="footer_CR">
+            <svg viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <path d="M11.88 9.14c1.28.06 1.61 1.15 1.63 1.66h1.79c-.08-1.98-1.49-3.19-3.45-3.19C9.64 7.61 8 9 8 12.14c0 1.94.93 4.24 3.84 4.24 2.22 0 3.41-1.65 3.44-2.95h-1.79c-.03.59-.45 1.38-1.63 1.44-1.31-.04-1.86-1.06-1.86-2.73 0-2.89 1.28-2.98 1.88-3zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"></path>
+            </svg>
+             OhSweetie / 2022 
+        </div>
+        <div class="footer_logo"><img class="flower-logo" src="images/Oh+Sweetie+Flower.png" alt="Small Flower Logo"></div>
+        <div class="footer_email">oh.sweetie.creations@gmail.com</div>
+    </footer>
 </body>
 </html>
