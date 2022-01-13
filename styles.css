@@ -19,14 +19,16 @@
     width: 40%;
     min-width: 4rem;
     height: 40%;
+    animation: header-logo-load var(--header-logo-load-time) ease-in;
 }
 
 body {
     margin: 0;
     background-color: #f6e2b3;
     /*cursor: url(../images/cursor_auto.png) 4 4, auto;*/
-    --nav-load-time: 300ms;
+    --nav-load-time: 500ms;
     --nav-link-load-time: 500ms;
+    --header-logo-load-time: 500ms
     --article-load-delay: calc(var(--nav-load-time) + var(--nav-link-load-time))
 }
 
@@ -49,19 +51,22 @@ h2 {
 
 nav {
     text-align: center;
-    background-image: repeating-linear-gradient(120deg, #fff, #eee, #fff 5px);
     position: sticky;
-    top: 23px;
+    top: 95px;
     z-index: 9;
-    transform: translate(0, -50%);
-    border-radius: 25px;
+    padding: 2em;
+    transform: translate(0, -100%);
+    width: 100%;
     animation: nav-load var(--nav-load-time) ease-in;
 }
 
 nav .navButtons {
-    width: 100%;
     max-width: 720px;
+    box-shadow: 0px 0px 10px 5px #474747;
+    background-image: repeating-linear-gradient(120deg, #fff, #eee, #fff 5px);
     display: flex;
+    border-radius: 25px;
+    padding: 0.5em 2em;
     justify-content: space-evenly;
 }
 
@@ -73,7 +78,7 @@ nav .navButtons button {
     padding: 0.75em;
     outline: none;
     transition: all 0.3s;
-    margin: 0;
+    margin: 0 auto;
     --afterColor: #69c;
     opacity: 0.8;
     transition: opacity 0.2s;
@@ -103,28 +108,6 @@ nav .navButtons button::after {
     opacity: 0;
     transition: all 0.25s;
 }
-  
-/*
-nav li:first-child {
-    animation-name: nav-first-link-load;
-    transform: translateX(-10%);
-}
-
-nav li:nth-child(2) {
-    animation-name: nav-first-link-load;
-    transform: translateX(-10%);
-}
-  
-nav li:nth-child(4) {
-    animation-name: nav-last-link-load;
-    transform: translateX(10%);
-}
-
-nav li:last-child {
-    animation-name: nav-last-link-load;
-    transform: translateX(10%);
-}
-*/
   
 nav li:hover {
     background-color: #FFFFFF44;
@@ -162,12 +145,45 @@ nav .navButtons button:not(:hover):focus {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
+.pricing-grid {
+    display: grid;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 2rem;
+    box-shadow: 0px 1rem 1.5rem rgba(0,0,0,0.5);
+    margin: 35px;
+}
+
+.card-banner {
+    background-color: rgba(73, 73, 73, 1);
+    height: 4rem;
+    color:white;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.card-content {
+    padding: 2rem;
+}
+
+/*
 pre {
     animation: article-load 500ms ease-in calc(var(--article-load-delay) + 200ms);
     animation-fill-mode: forwards;
     transform: translateY(-20px);
     opacity: 0;
 }
+*/
 
 form {
     display: block;
@@ -425,15 +441,15 @@ footer svg {
   
 @keyframes nav-load {
     0% {
-        transform: translateY(-100%);
+        transform: translateY(0);
     }
   
     100% {
-        transform: translateY(0);
+        transform: translateY(-100%);
     }
 }
   
-@keyframes nav-link-load {
+@keyframes header-logo-load {
     0% {
         transform: scale(0);
     }
@@ -444,45 +460,5 @@ footer svg {
   
     100% {
         transform: scale(1);
-    }
-}
-  
-@keyframes nav-first-link-load {
-    0% {
-        transform: translateX(-10%);
-    }
-  
-    90% {
-        transform: translateX(50%);
-    }
-  
-    100% {
-        transform: translateX(0);
-    }
-}
-  
-@keyframes nav-last-link-load {
-    0% {
-        transform: translateX(10%);
-    }
-  
-    90% {
-        transform: translateX(-50%);
-    }
-  
-    100% {
-        transform: translateX(0);
-    }
-}
-  
-@keyframes article-load {
-    0% {
-        transform: translateY(-20px);
-        opacity: 0;
-    }
-  
-    100% {
-        transform: translateY(0px);
-        opacity: 1;
     }
 }
