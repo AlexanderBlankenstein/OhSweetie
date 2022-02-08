@@ -11,7 +11,7 @@
 .header {
     display: flex;
     padding: 1rem;
-    background-color: rgb(155, 122, 81);
+    background-color: rgb(126,102,81);
 }
 
 .logo {
@@ -145,10 +145,26 @@ nav .navButtons button:not(:hover):focus {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
+/*
+.gallery {
+    background-color: rgba(180,153,130,0.8);
+}
+*/
+
+.flavours {
+    padding: 0em 1em 2em;
+    background-color: rgba(246,226,179,0.8);
+}
+
+.pricing {
+    padding: 4em 1em 2em;
+    background-color: rgba(253,174,174,0.8);
+}
+
 .pricing-grid {
     display: grid;
-    text-align: center;
-    justify-content: space-evenly;
+    gap: 1.5rem;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .card {
@@ -170,10 +186,12 @@ nav .navButtons button:not(:hover):focus {
     align-items: flex-end;
     justify-content: center;
     box-sizing: border-box;
+    margin-top: 0;
 }
 
 .card-content {
     padding: 2rem;
+    margin-top: 0;
 }
 
 /*
@@ -196,7 +214,8 @@ form {
 
 .contact {
     position: relative;
-    background-color: rgba(253, 174, 174, 0.8);
+    background-color: rgba(255,141,170,0.8);
+    /*background-color: rgba(253, 174, 174, 0.8);*/
     padding: 4em 1em 6em;
 }
 

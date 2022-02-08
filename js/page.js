@@ -6,7 +6,7 @@ function initPage() {
     top.classList.add('low');
     top.style.minHeight = `calc(${window.innerHeight}px - 2.7em)`;
     top.insertAdjacentHTML('afterend', pageHTML);
-    top.addEventListener('click', () => scrollToSection('about'));
+    top.addEventListener('click', () => scrollToSection('flavours'));
     
     window.onresize = () => {
         top.style.minHeight = `calc(${window.innerHeight}px - 2.7em)`;
