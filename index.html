@@ -13,21 +13,72 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
 </head>
 <body>
-    <section class="header" style="min-height: calc(889px - 2.5em);">
-        <img class="logo" src="images/Oh+Sweetie+Logo+Name+Only.png" alt="Logo">
+    <section class="header">
+            <div class="header-email">ohsweetie@email.com</div>
+            <div class="header-social">social Links</div>
     </section>
     <nav>
-        <div class="navButtons">
+        <div class="navButtons left">
+            <button onclick="scrollToSection('contact')" data-anchor="anchor_contact" class="on">
+                Home
+            </button>
+            <button onclick="scrollToSection('contact')" data-anchor="anchor_contact" class="on">
+                Services
+            </button>
+            <button onclick="scrollToSection('contact')" data-anchor="anchor_contact" class="on">
+                Flavours
+            </button>
+        </div>
+        <div class="nav-center">
+            <div class="img-logo">
+                <div class="site-title">
+                    <a href="http://ohsweetie.ca" rel="home" class="menu-item-link">
+                        <span>
+                            <img class="logo" src="images/Oh+Sweetie+Logo+Name+Only.png" alt="Logo">
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="navButtons right">
+            <button onclick="scrollToSection('contact')" data-anchor="anchor_contact" class="on">
+                Gallery
+            </button>
+            <button onclick="scrollToSection('contact')" data-anchor="anchor_contact" class="on">
+                About
+            </button>
             <button onclick="scrollToSection('contact')" data-anchor="anchor_contact" class="on">
                 Contact Me
             </button>
         </div>
     </nav>
-    <section class="underConstruction">
+    <div class="img-carousel">
+        <img class="img" src="images/Oh+Sweetie+Logo+NoBG.png" alt="Logo">
+    </div>
+    <section class="featured">
         <div class="content">
-            <h2>Under Construction</h2>
-            <p>We are baking up something new here.</p>
-            <p>To place an Order or ask a question, please fill out the form below.</p>
+            <h2>Our Featured Cakes</h2>
+        </div>
+    </section>
+    <section class="services">
+        <div class="content">
+            <h2>Services We Offer</h2>
+            <div>Decorative Cookies</div>
+            <div>Tasty Cupcakes</div>
+            <div>Weddign Cakes</div>
+            <div>Dietary Concious</div>
+            <div>Menu Planing</div>
+            <div>Home Delivery</div>
+        </div>
+    </section>
+    <section class="flavours">
+        <div class="content">
+            <h2>Flavours We Offer</h2>
+        </div>
+    </section>
+    <section class="about">
+        <div class="content">
+            <h2>Our Chef</h2>
         </div>
     </section>
     <section class="contact">
