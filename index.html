@@ -13,45 +13,69 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
 </head>
 <body>
-    <section class="header">
-            <div class="header-email">ohsweetie@email.com</div>
-            <div class="header-social">social Links</div>
-    </section>
-    <nav>
-        <div class="navButtons left">
-            <button onclick="scrollToSection('contact')" data-anchor="anchor_contact" class="on">
-                Home
-            </button>
-            <button onclick="scrollToSection('contact')" data-anchor="anchor_contact" class="on">
-                Services
-            </button>
-            <button onclick="scrollToSection('contact')" data-anchor="anchor_contact" class="on">
-                Flavours
-            </button>
-        </div>
-        <div class="nav-center">
-            <div class="img-logo">
-                <div class="site-title">
-                    <a href="http://ohsweetie.ca" rel="home" class="menu-item-link">
-                        <span>
-                            <img class="logo" src="images/Oh+Sweetie+Logo+Name+Only.png" alt="Logo">
-                        </span>
-                    </a>
+    <div class="desktop-header">
+        <section class="header">
+            <div class="header-email">oh.sweetie.creations@gmail.com</div>
+            <div class="header-social">
+                <a class="header-socialIcon" target="_blank" rel="noreferrer" href="https://www.instagram.com/oh.sweetie.creations/">
+                    <img src="./images/instagram.png" alt="Instagram">
+                </a>
+                <a class="header-socialIcon" target="_blank" rel="noreferrer" href="mailto:oh.sweetie.creations@gmail.com?subject = Order">
+                    <img src="./images/email.png" alt="Email">
+                </a>
+            </div>
+        </section>
+        <nav>
+            <div class="navButtons left">
+                <button onclick="scrollToSection('contact')" data-anchor="anchor_contact" class="on">
+                    Home
+                </button>
+                <button onclick="scrollToSection('contact')" data-anchor="anchor_contact" class="on">
+                    Services
+                </button>
+                <button onclick="scrollToSection('contact')" data-anchor="anchor_contact" class="on">
+                    Flavours
+                </button>
+            </div>
+            <div class="nav-center">
+                <div class="img-logo">
+                    <div class="site-title">
+                        <a href="http://ohsweetie.ca" rel="home" class="menu-item-link">
+                            <span>
+                                <img class="logo" src="images/Oh+Sweetie+Logo+Name+Only.png" alt="Logo">
+                            </span>
+                        </a>
+                    </div>
                 </div>
             </div>
+            <div class="navButtons right">
+                <button onclick="scrollToSection('contact')" data-anchor="anchor_contact" class="on">
+                    Gallery
+                </button>
+                <button onclick="scrollToSection('contact')" data-anchor="anchor_contact" class="on">
+                    About
+                </button>
+                <button onclick="scrollToSection('contact')" data-anchor="anchor_contact" class="on">
+                    Contact Me
+                </button>
+            </div>
+        </nav>
+    </div>
+    <div class="mobile-header">
+        <div id="mySidepanel" class="sidepanel">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
         </div>
-        <div class="navButtons right">
-            <button onclick="scrollToSection('contact')" data-anchor="anchor_contact" class="on">
-                Gallery
-            </button>
-            <button onclick="scrollToSection('contact')" data-anchor="anchor_contact" class="on">
-                About
-            </button>
-            <button onclick="scrollToSection('contact')" data-anchor="anchor_contact" class="on">
-                Contact Me
-            </button>
+        <div class="mobile-header-logo">
+            <img class="mobile-logo" src="images/Oh+Sweetie+Logo+Name+Only.png" alt="Logo">
         </div>
-    </nav>
+        <div class="mobile-header-menu">
+            <button class="openbtn" onclick="openNav()">☰</button>
+        </div>
+    </div>
     <div class="img-carousel">
         <img class="img" src="images/Oh+Sweetie+Logo+NoBG.png" alt="Logo">
     </div>
