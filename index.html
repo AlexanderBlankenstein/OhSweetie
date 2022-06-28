@@ -27,13 +27,13 @@
         </section>
         <nav>
             <div class="navButtons left">
-                <button onclick="scrollToSection('contact')" data-anchor="anchor_contact" class="on">
+                <button href="http://ohsweetie.ca" rel="home" class="on">
                     Home
                 </button>
-                <button onclick="scrollToSection('contact')" data-anchor="anchor_contact" class="on">
+                <button onclick="scrollToSection('services')" data-anchor="anchor_services" class="on">
                     Services
                 </button>
-                <button onclick="scrollToSection('contact')" data-anchor="anchor_contact" class="on">
+                <button onclick="scrollToSection('flavours')" data-anchor="anchor_flavours" class="on">
                     Flavours
                 </button>
             </div>
@@ -52,7 +52,7 @@
                 <button onclick="scrollToSection('contact')" data-anchor="anchor_contact" class="on">
                     Gallery
                 </button>
-                <button onclick="scrollToSection('contact')" data-anchor="anchor_contact" class="on">
+                <button onclick="scrollToSection('about')" data-anchor="anchor_about" class="on">
                     About
                 </button>
                 <button onclick="scrollToSection('contact')" data-anchor="anchor_contact" class="on">
@@ -64,10 +64,11 @@
     <div class="mobile-header">
         <div id="mySidepanel" class="sidepanel">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Clients</a>
-            <a href="#">Contact</a>
+            <a onclick="scrollToSection('services')" data-anchor="anchor_services">Services</a>
+            <a onclick="scrollToSection('flavours')" data-anchor="anchor_flavours">Flavours</a>
+            <a href="#">Gallery</a>
+            <a onclick="scrollToSection('about')" data-anchor="anchor_about">About</a>
+            <a onclick="scrollToSection('contact')" data-anchor="anchor_contact">Contact</a>
         </div>
         <div class="mobile-header-logo">
             <img class="mobile-logo" src="images/Oh+Sweetie+Logo+Name+Only.png" alt="Logo">
@@ -80,27 +81,91 @@
         <img class="img" src="images/Oh+Sweetie+Logo+NoBG.png" alt="Logo">
     </div>
     <section class="featured">
+        <div class="anchor anchor_featured"></div>
         <div class="content">
             <h2>Our Featured Cakes</h2>
         </div>
     </section>
     <section class="services">
+        <div class="anchor anchor_services"></div>
         <div class="content">
-            <h2>Services We Offer</h2>
-            <div>Decorative Cookies</div>
-            <div>Tasty Cupcakes</div>
-            <div>Weddign Cakes</div>
-            <div>Dietary Concious</div>
-            <div>Menu Planing</div>
-            <div>Home Delivery</div>
+            <div class="services-title">
+                <h2>Services We Offer</h2>
+            </div>
+            <div class="grid-column">
+                <div class="grid-row">
+                    <div class="tile">
+                        <div class="tile-image">
+                            <img src="./images/email.png" alt="Email">
+                        </div>
+                        <div class="tile-details">
+                            <div>Decorative Cookies</div>
+                            <div class="tile-info">stuff goes here</div>
+                        </div>
+                    </div>
+
+                    <div class="tile">
+                        <div class="tile-image">
+                            <img src="./images/email.png" alt="Email">
+                        </div>
+                        <div class="tile-details">
+                            <div>Tasty Cupcakes</div>
+                            <div class="tile-info">stuff goes here</div>
+                        </div>
+                    </div>
+
+                    <div class="tile">
+                        <div class="tile-image">
+                            <img src="./images/email.png" alt="Email">
+                        </div>
+                        <div class="tile-details">
+                            <div>Weddign Cakes</div>
+                            <div class="tile-info">stuff goes here</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-row">
+                    <div class="tile">
+                        <div class="tile-image">
+                            <img src="./images/email.png" alt="Email">
+                        </div>
+                        <div class="tile-details">
+                            <div>Dietary Concious</div>
+                            <div class="tile-info">stuff goes here</div>
+                        </div>
+                    </div>
+
+                    <div class="tile">
+                        <div class="tile-image">
+                            <img src="./images/email.png" alt="Email">
+                        </div>
+                        <div class="tile-details">
+                            <div>Menu Planing</div>
+                            <div class="tile-info">stuff goes here</div>
+                        </div>
+                    </div>
+
+                    <div class="tile">
+                        <div class="tile-image">
+                            <img src="./images/email.png" alt="Email">
+                        </div>
+                        <div class="tile-details">
+                            <div>Home Delivery</div>
+                            <div class="tile-info">stuff goes here</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <section class="flavours">
+        <div class="anchor anchor_flavours"></div>
         <div class="content">
             <h2>Flavours We Offer</h2>
         </div>
     </section>
     <section class="about">
+        <div class="anchor anchor_about"></div>
         <div class="content">
             <h2>Our Chef</h2>
         </div>

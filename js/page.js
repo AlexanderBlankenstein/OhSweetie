@@ -6,7 +6,7 @@ function initPage() {
     top.classList.add('low');
     top.style.minHeight = `calc(${window.innerHeight}px - 2.7em)`;
     top.insertAdjacentHTML('afterend', pageHTML);
-    top.addEventListener('click', () => scrollToSection('flavours'));
+    top.addEventListener('click', () => scrollToSection('contact'));
     
     window.onresize = () => {
         top.style.minHeight = `calc(${window.innerHeight}px - 2.7em)`;
@@ -57,6 +57,7 @@ function closeNav() {
 function scrollToSection(anchorName) {
 
     const anchor = document.querySelector(`.anchor_${anchorName}`);
+    closeNav();
 
     if (anchor) {
         document.activeElement.blur();

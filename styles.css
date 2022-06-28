@@ -248,10 +248,14 @@ h2 {
 
 .anchor {
     position: absolute;
-    top: -2.6em;
+}
+
+.featured {
+    padding: 0em 1em 2em;
 }
 
 .services {
+    padding: 0em 1em 2em;
     background-color: var(--accent);
 }
 
@@ -259,9 +263,8 @@ h2 {
     padding: 0em 1em 2em;
 }
 
-.pricing {
-    padding: 4em 1em 2em;
-    background-color: rgba(253,174,174,0.8);
+.about {
+    padding: 0em 1em 2em;
 }
 
 .pricing-grid {
