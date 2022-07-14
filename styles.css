@@ -1,11 +1,13 @@
 :root {
     --style_page: true;
     --background: #ffffff;
+    --background_grey: #f6f6f6;
     --accent: #63bcd4;
     --font: #000000;
     --hover_grey: #868686;
     --boarder: #8d8d8d;
     --footer: #2c2c2c;
+    --tile_color: #ffffff;
 }
 
 *, *:before, *:after {
@@ -14,13 +16,17 @@
     margin: auto auto;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* header (desktop) */
 
 .header {
     display: grid;
     grid-template-columns: 1fr 1fr;
     position: relative;
-    padding: 1rem;
+    padding: 0.5rem;
     z-index: 999;
     background-color: var(--accent);
     color: var(--background);
@@ -264,16 +270,51 @@ h2 {
 }
 
 .featured {
-    padding: 1em 1em 2em;
+    padding: 5em 1em 5em;
 }
 
+/* Services Section */ 
+
 .services {
-    padding: 1em 1em 2em;
+    padding: 5em 0em 5em;
     background-color: var(--accent);
+    color: var(--background);
+}
+
+.tile-hover:hover {
+    background-color: var(--background);
+    color: var(--tile_color);
+    transition-duration: 0.8s;
+    transition-delay: 0.0s;
+    --tile_color: #000000;
+}
+
+.tile-image {
+    margin: 0;
+}
+
+.tile-details {
+    margin: 0;
+}
+
+.tile-title {
+    margin-bottom: 0.25em;
+    border-bottom: 1px solid var(--tile_color);
+}
+
+.row-gap {
+    grid-gap: 4em;
+    margin-top: 2em;
+}
+
+.boarder {
+    border: 1px dashed var(--background);
+    margin: 1em 0em 1em 0em;
+    padding: 2em;
 }
 
 .content-title {
-    border-bottom: 1px solid var(--font);
+    border-bottom: 2px solid var(--background);
     margin-bottom: 1em;
     width: fit-content;
 }
@@ -284,7 +325,7 @@ h2 {
 
 .about {
     padding: 1em 1em 2em;
-    background-color: var(--accent);
+    background-color: var(--background_grey);
 }
 
 .grid-column {

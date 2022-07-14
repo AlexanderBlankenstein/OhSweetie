@@ -30,9 +30,9 @@
         </section>
         <nav>
             <div class="navButtons left">
-                <button class="nav-btn" href="http://ohsweetie.ca" rel="home">
+                <a class="nav-btn" href="./index.html" rel="home">
                     Home
-                </button>
+                </a>
                 <button class="nav-btn" onclick="scrollToSection('services')" data-anchor="anchor_services">
                     Services
                 </button>
@@ -52,15 +52,15 @@
                 </div>
             </div>
             <div class="navButtons right">
-                <button class="nav-btn" onclick="scrollToSection('contact')" data-anchor="anchor_contact">
-                    Gallery
-                </button>
                 <button class="nav-btn" onclick="scrollToSection('about')" data-anchor="anchor_about">
                     About
                 </button>
                 <button class="nav-btn" onclick="scrollToSection('contact')" data-anchor="anchor_contact">
                     Contact Me
                 </button>
+                <a class="nav-btn" href="./order.html" rel="order">
+                    Order Now
+                </a>
             </div>
         </nav>
     </div>
@@ -71,9 +71,9 @@
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
             <a class="nav-btn" onclick="scrollToSection('services')" data-anchor="anchor_services">Services</a>
             <a class="nav-btn" onclick="scrollToSection('flavours')" data-anchor="anchor_flavours">Flavours</a>
-            <a class="nav-btn" href="#">Gallery</a>
             <a class="nav-btn" onclick="scrollToSection('about')" data-anchor="anchor_about">About</a>
             <a class="nav-btn" onclick="scrollToSection('contact')" data-anchor="anchor_contact">Contact</a>
+            <a class="nav-btn" href="./order.html" rel="order">Order Now</a>
         </div>
         <div class="mobile-header-logo">
             <img class="mobile-logo" src="images/Oh+Sweetie+Logo+Name+Only.png" alt="Logo">
@@ -132,64 +132,66 @@
             <div class="content-title">
                 <h2>Services We Offer</h2>
             </div>
-            <div class="row">
-                <div class="col">
+            <div class="rows">
+            <div class="row row-gap">
+                <div class="col-lg d-flex justify-content-center boarder tile-hover">
                     <div class="tile-image">
                         <img src="./images/email.png" alt="Email">
                     </div>
                     <div class="tile-details">
-                        <div>Decorative Cookies</div>
-                        <div class="tile-info">stuff goes here</div>
+                        <div class="tile-title">Decorative Cookies</div>
+                        <div class="tile-info">As many cake designs as there are special events. If you can dream it, we can bake it.</div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-lg d-flex justify-content-center boarder tile-hover">
                     <div class="tile-image">
                         <img src="./images/email.png" alt="Email">
                     </div>
                     <div class="tile-details">
-                        <div>Tasty Cupcakes</div>
-                        <div class="tile-info">stuff goes here</div>
+                        <div class="tile-title">Tasty Cupcakes</div>
+                        <div class="tile-info">Our Tasty cupcakes are so delicious that if you taste one, you will fall in love instantly.</div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-lg d-flex justify-content-center boarder tile-hover">
                     <div class="tile-image">
                         <img src="./images/email.png" alt="Email">
                     </div>
                     <div class="tile-details">
-                        <div>Weddign Cakes</div>
-                        <div class="tile-info">stuff goes here</div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <div class="tile-image">
-                        <img src="./images/email.png" alt="Email">
-                    </div>
-                    <div class="tile-details">
-                        <div>Dietary Concious</div>
-                        <div class="tile-info">stuff goes here</div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="tile-image">
-                        <img src="./images/email.png" alt="Email">
-                    </div>
-                    <div class="tile-details">
-                        <div>Menu Planing</div>
-                        <div class="tile-info">stuff goes here</div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="tile-image">
-                        <img src="./images/email.png" alt="Email">
-                    </div>
-                    <div class="tile-details">
-                        <div>Home Delivery</div>
-                        <div class="tile-info">stuff goes here</div>
+                        <div class="tile-title">Weddign Cakes</div>
+                        <div class="tile-info">Decadent wedding cakes to celebrate your special day. Check out some of our previous designs.</div>
                     </div>
                 </div>
             </div>
+            <div class="row row-gap">
+                <div class="col-lg d-flex justify-content-center boarder tile-hover">
+                    <div class="tile-image">
+                        <img src="./images/email.png" alt="Email">
+                    </div>
+                    <div class="tile-details">
+                        <div class="tile-title">Dietary Concious</div>
+                        <div class="tile-info">Vegan, Vegetarian, gluten free, and anything else. Let us know what, and we will work our magic.</div>
+                    </div>
+                </div>
+                <div class="col-lg d-flex justify-content-center boarder tile-hover">
+                    <div class="tile-image">
+                        <img src="./images/email.png" alt="Email">
+                    </div>
+                    <div class="tile-details">
+                        <div class="tile-title">Menu Planning</div>
+                        <div class="tile-info">Planning an event and need some ideas? We got you covered with Menu Tasting as well!</div>
+                    </div>
+                </div>
+                <div class="col-lg d-flex justify-content-center boarder tile-hover">
+                    <div class="tile-image">
+                        <img src="./images/email.png" alt="Email">
+                    </div>
+                    <div class="tile-details">
+                        <div class="tile-title">Home Delivery</div>
+                        <div class="tile-info">Can't leave the party? No problem, we provide delivery and can help set up the deliciousness!</div>
+                    </div>
+                </div>
+            </div>
+        </div>
         </div>
     </section>
 
