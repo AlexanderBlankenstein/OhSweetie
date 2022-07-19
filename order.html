@@ -82,113 +82,13 @@
             <button class="openbtn" onclick="openNav()">☰</button>
         </div>
     </div>
-    <section class="flavours">
-        <div class="anchor anchor_flavours"></div>
+    <!-- Footer -->
+    <section class="order">
+        <div class="anchor anchor_order"></div>
         <div class="content">
-            <h2>Flavours</h2>
-            <div class="flavours_grid">
-                <div class="card">
-                    <div class="card-banner">
-                        <h3>Cupcake/Cake Flavours</h3>
-                    </div>
-                    <div class="card-content">
-                        <div class="price-text">
-                            <h5>Traditional:</h5>
-                            <p>Vanilla</p>
-                            <p>Chocolate</p>
-                            <p>Marble</p>
-                            <p>Red Velvet (made with beets)</p>
-                            <h5>Fruity:</h5>
-                            <p>Lemon</p>
-                            <p>Apple</p>
-                            <p>Banana</p>
-                            <p>Strawberry Rhubarb</p>
-                            <p>Pumpkin</p>
-                            <h5>Fun:</h5>
-                            <p>Funfetti</p>
-                            <p>Vanilla Chocolate Chip</p>
-                            <p>Cinnamon Roll</p>
-                            <h5>Seasonal:</h5>
-                            <p>Gingerbread</p>
-                            <p>Candy Cane</p>
-                            <p>Hot Chocolate</p>
-                            <p>Mint Chocolate</p>
-                            <p>Irish Crème</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-banner">
-                        <h3>Icing Flavours</h3>
-                    </div>
-                    <div class="card-content">
-                        <div class="price-text">
-                            <p>Vanilla Buttercream</p>
-                            <p>Chocolate Buttercream</p>
-                            <p>Lemon Buttercream</p>
-                            <p>Brown Butter Buttercream</p>
-                            <p>Cream Cheese</p>
-                            <p>Cookies and Cream</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-banner">
-                        <h3>Filling Flavours</h3>
-                    </div>
-                    <div class="card-content">
-                        <div class="price-text">
-                            <p>Raspberry</p>
-                            <p>Lemon Curd</p>
-                            <p>Vanilla Pudding</p>
-                            <p>Chocolate Pudding</p>
-                            <p>Strawberry and Cream</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="pricing">
-        <div class="anchor anchor_pricing"></div>
-        <div class="content">
-            <h2>Pricing</h2>
-            <div class="pricing-grid">
-                <div class="card">
-                    <div class="card-banner">
-                        <h3>Cakes</h3>
-                    </div>
-                    <div class="card-content">
-                        <div class="price-text">
-                            <p>6” three layers: $30</p>
-                            <p>8” two layers: $40</p>
-                            <p>8” three layers: $45</p>
-                            <p>10” one layer: $50</p>
-                            <p>10” two layers: $60</p>
-                            <p>Sheet cake two layers: $60</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-banner">
-                        <h3>Cupcakes</h3>
-                    </div>
-                    <div class="card-content">
-                        <div class="price-text">
-                            <p>Mini: $12 per dozen</p> 
-                            <p>Regular: $20 per dozen</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="contact">
-        <div class="anchor anchor_contact"></div>
-        <div class="content">
-            <h2>Contact</h2>
+            <h2>Order Now!</h2>
             <div class="contact_grid">
-                <form class="contact_form" method="post" name="Contact Form" action="/index.html" netlify-honeypot="hpinput" data-netlify="true">
+                <form class="contact_form" method="post" name="Order Form" action="/index.html" netlify-honeypot="hpinput" data-netlify="true">
                     <div class="contact_fieldset">
                         <input class="hidden" name="hpinput">
                         <div class="contact_item">
@@ -209,11 +109,68 @@
                             <input id="contact-phone" name="phone" type="tel" class="contact_input" placeholder=" ">
                             <label for="contact-phone" class="contact_label">Phone</label>
                         </div>
+
+                        <div class="contact_item">
+                            <div>
+                                <label for="eventDate">
+                                    Event Date 
+                                    <span>*</span>
+                                </label>
+                                <input id="eventDate" class="form-control" type="date" required/>
+                                <span id="eventDateSelected"></span>
+                            </div>
+                        </div>
+                        <div class="contact_item">
+                            <input id="contact-email" name="email" type="email" class="contact_input" placeholder=" " required>
+                            <label for="contact-email" class="contact_label">
+                                Event Type 
+                                <span>*</span>
+                            </label>
+                        </div>
+                        <div class="contact_item" required>
+                            <label for="contact-item">
+                                Dessert Type
+                                <span>*</span>
+                            </label>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-text span-across">
+                                            <input type="checkbox">
+                                            <div>Cake</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-text span-across">
+                                            <input type="checkbox">
+                                            <div>Cupcake</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input-group">
+                                <div class="input-group-text">
+                                    <input type="checkbox">
+                                    <div>Other</div>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Please Specify">
+                            </div> 
+                        </div>
+                        <div class="contact_item">
+                            <input id="contact-email" name="number" type="number" class="contact_input" placeholder=" " required>
+                            <label for="contact-email" class="contact_label">
+                                Number of Guests 
+                                <span>*</span>
+                            </label>
+                        </div>
+
                         <div class="contact_item">
                             <textarea id="contact-msg" name="messsage" class="contact_input" placeholder=" "></textarea>
-                            <label for="contact-msg" class="contact_label">Message</label>
+                            <label for="contact-msg" class="contact_label">Short Description of Dessert</label>
                         </div>
-                        <div class="contact_msg"></div>
+                        <!--<div class="contact_msg"></div>-->
                         <div class="contact_buttons">
                             <button type="button" onclick="clearContact();">Clear</button>
                             <button type="submit">Submit</button>
@@ -231,6 +188,7 @@
             </div>
         </div>
     </section>
+    <!-- Footer -->
     <footer class="footer">
         <div class="footer_CR">
             <svg viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">

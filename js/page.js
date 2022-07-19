@@ -72,3 +72,10 @@ function clearContact() {
 
     document.querySelector('.contact_form').reset();
 }
+
+let eventDate = document.getElementById('eventDate')
+
+eventDate.addEventListener('change',(e)=>{
+  let eventDateVal = e.target.value
+  document.getElementById('eventDateSelected').innerText = eventDateVal
+})
