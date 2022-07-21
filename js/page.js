@@ -1,5 +1,14 @@
 const script_page = true;
 
+window.onload = function() {
+    let anchor = localStorage['anchorToPass'];
+    localStorage.removeItem( 'anchorToPass' ); // Clear the localStorage
+    if (anchor !== undefined) {
+        console.log(anchor);
+        scrollToSection(anchor)
+    }
+}
+
 function initPage() {
 
     const top = document.querySelector('.top');
@@ -54,6 +63,22 @@ function closeNav() {
   document.getElementById("mySidepanel").style.width = "0";
 }
 
+
+// When the user scrolls down 300px from the top of the document, show the button
+window.onscroll = function() {
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        document.getElementById("topBtn").style.display = "block";
+      } else {
+        document.getElementById("topBtn").style.display = "none";
+      }
+};
+
+// When the user clicks on the button, scroll to the top of the document
+function scrollToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
 function scrollToSection(anchorName) {
 
     const anchor = document.querySelector(`.anchor_${anchorName}`);
@@ -72,10 +97,3 @@ function clearContact() {
 
     document.querySelector('.contact_form').reset();
 }
-
-let eventDate = document.getElementById('eventDate')
-
-eventDate.addEventListener('change',(e)=>{
-  let eventDateVal = e.target.value
-  document.getElementById('eventDateSelected').innerText = eventDateVal
-})
