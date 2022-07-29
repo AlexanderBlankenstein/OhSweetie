@@ -9,17 +9,9 @@ function closeNav() {
 }
 
 function scrollToSection(anchorName) {
-    localStorage.setItem( 'anchorToPass', anchorName );
-    window.location.href = "./index.html";
-    closeNav();
-}
-
-function clearContact() {
-    const msg = document.querySelector('.contact_msg');
-    msg.innerHTML = '';
-    msg.classList = 'contact_msg';
-
-    document.querySelector('.contact_form').reset();
+  localStorage.setItem( 'anchorToPass', anchorName );
+  window.location.href = "./index.html";
+  closeNav();
 }
 
 let eventDate = document.getElementById('eventDate')
@@ -28,3 +20,24 @@ eventDate.addEventListener('change',(e)=>{
   let eventDateVal = e.target.value
   document.getElementById('eventDateSelected').innerText = eventDateVal
 })
+
+function clearOrder() {
+  document.querySelector('.order_form').reset();
+}
+
+function toggle(object) {
+  let element;
+  if (object === "Cake"){
+    element = document.getElementById('cake-checkbox');
+  } else if (object === "Cupcake"){
+    element = document.getElementById('cupcake-checkbox');
+  } else if (object === "other") {
+    element = document.getElementById('other-checkbox');
+  }
+
+  if (element.checked === false){
+    element.checked = true;
+  } else {
+    element.checked = false;
+  }
+}

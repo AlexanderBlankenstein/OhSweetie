@@ -9,6 +9,8 @@
     --boarder: #8d8d8d;
     --footer: #2c2c2c;
     --tile_color: #ffffff;
+    --form_background: #b4b4b4;
+    --form_background_light: #c1c1c1;
 }
 
 *, *:before, *:after {
@@ -655,6 +657,32 @@ button, select {
     line-height: 1;
     pointer-events: none;
     transition: all 0.3s;
+}
+
+.contact_date, .contact_type, .contact_specify {
+    background-color: var(--form_background);
+    font-size: inherit;
+    font-family: inherit;
+    border: 1px solid #69c;
+    border-radius: 5px;
+    padding: 0.5em;
+    background: #0005;
+    color: rgb(0, 0, 0);
+    transition: all 0.3s;
+    outline-offset: 2px;
+}
+
+.contact_date:focus, .contact_specify:focus {
+    background-color: var(--form_background);
+}
+
+.contact_type {
+    grid-gap: 1em;
+}
+
+.contact_specify {
+    background-color: var(--form_background_light);
+    color: var(--font);
 }
 
 /* footer */

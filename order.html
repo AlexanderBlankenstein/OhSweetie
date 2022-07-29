@@ -82,13 +82,13 @@
             <button class="openbtn" onclick="openNav()">☰</button>
         </div>
     </div>
-    <!-- Footer -->
+    <!-- Orders -->
     <section class="order">
         <div class="anchor anchor_order"></div>
         <div class="content">
             <h2>Order Now!</h2>
             <div class="contact_grid">
-                <form class="contact_form" method="post" name="Order Form" action="/index.html" netlify-honeypot="hpinput" data-netlify="true">
+                <form class="order_form" method="post" name="Order Form" action="/index.html" netlify-honeypot="hpinput" data-netlify="true">
                     <div class="contact_fieldset">
                         <input class="hidden" name="hpinput">
                         <div class="contact_item">
@@ -116,7 +116,7 @@
                                     Event Date 
                                     <span>*</span>
                                 </label>
-                                <input id="eventDate" class="form-control" type="date" required/>
+                                <input id="eventDate" class="form-control contact_date" type="date" required/>
                                 <span id="eventDateSelected"></span>
                             </div>
                         </div>
@@ -135,27 +135,27 @@
                             <div class="row">
                                 <div class="col-6">
                                     <div class="input-group mb-3">
-                                        <div class="input-group-text span-across">
-                                            <input type="checkbox">
+                                        <div class="input-group-text span-across contact_type" onclick="toggle('Cake')">
+                                            <input name="cake-checkbox" id="cake-checkbox" type="checkbox" value="Checkbox" onclick="toggle('Cake')">
                                             <div>Cake</div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-6">
                                     <div class="input-group mb-3">
-                                        <div class="input-group-text span-across">
-                                            <input type="checkbox">
+                                        <div class="input-group-text span-across contact_type" onclick="toggle('Cupcake')">
+                                            <input name="cupcake-checkbox" id="cupcake-checkbox" type="checkbox" value="Checkbox" onclick="toggle('Cupcake')">
                                             <div>Cupcake</div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="input-group">
-                                <div class="input-group-text">
-                                    <input type="checkbox">
+                                <div class="input-group-text contact_type" onclick="toggle('other')">
+                                    <input name="other-checkbox" id="other-checkbox" type="checkbox" value="Checkbox" onclick="toggle('other')">
                                     <div>Other</div>
                                 </div>
-                                <input type="text" class="form-control" placeholder="Please Specify">
+                                <input type="text" class="form-control contact_specify" placeholder="Please Specify">
                             </div> 
                         </div>
                         <div class="contact_item">
@@ -167,12 +167,12 @@
                         </div>
 
                         <div class="contact_item">
-                            <textarea id="contact-msg" name="messsage" class="contact_input" placeholder=" "></textarea>
-                            <label for="contact-msg" class="contact_label">Short Description of Dessert</label>
+                            <textarea id="order-msg" name="messsage" class="contact_input" placeholder=" "></textarea>
+                            <label for="order-msg" class="contact_label">Short Description of Dessert</label>
                         </div>
                         <!--<div class="contact_msg"></div>-->
                         <div class="contact_buttons">
-                            <button type="button" onclick="clearContact();">Clear</button>
+                            <button type="button" onclick="clearOrder();">Clear</button>
                             <button type="submit">Submit</button>
                         </div>
                     </div>
