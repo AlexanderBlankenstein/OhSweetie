@@ -314,13 +314,13 @@ h2 {
 }
 
 .featured {
-    padding: 5em 2em;
+    padding: 4em 2em;
 }
 
 /* Services Section */ 
 
 .services {
-    padding: 5em 2em;
+    padding: 4em 2em;
     background-color: var(--accent);
     color: var(--background);
 }
@@ -365,7 +365,7 @@ h2 {
 /* Flavours section */
 
 .flavours {
-    padding: 5em 2em;
+    padding: 4em 2em;
     position: relative;
 }
 
@@ -421,11 +421,17 @@ h2 {
     border-bottom: 1px solid var(--font);
 }
 
-
+/* about */
 
 .about {
-    padding: 1em 1em 2em;
+    padding: 4em 1em;
     background-color: var(--background_grey);
+}
+
+.c_image {
+    border-radius: 50%;
+    width: 25em;
+    height: auto;
 }
 
 .grid-column {
@@ -664,6 +670,12 @@ button, select {
 .order {
     padding: 4em 0em;
     background-color: var(--background_grey);
+}
+
+@media (max-width: 720px) {
+    .order {
+        padding: 4em 1em;
+    }
 }
 
 .span-across {
